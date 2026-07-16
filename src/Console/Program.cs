@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
@@ -12,19 +12,29 @@ namespace MonkeyTypeConsole
 
         static void Main(string[] args)
         {
-            bool keepPlaying = true;
-
-            while (keepPlaying)
+            try
             {
-                RunTypingTest();
+                while (true)
+                {
+                    RunTypingTest();
 
-                Console.WriteLine("\n-----------------------------------");
-                Console.Write("想再挑戰一次嗎？ (Y/N): ");
-                string response = Console.ReadLine()?.Trim().ToUpper();
-                keepPlaying = (response == "Y");
+                    Console.WriteLine("\n-----------------------------------");
+                    Console.Write("想再挑戰一次嗎？ (Y/N): ");
+
+                    do
+                    {
+                        string response = Console.ReadLine()?.Trim().ToUpper();
+
+                        if (response != "Y" && response != "N") continue;
+                        if (response == "N") return;
+                        if (response == "Y") break;
+                    } while (true);
+                }
             }
-
-            Console.WriteLine("感謝遊玩！再見！");
+            finally
+            {
+                Console.WriteLine("感謝遊玩！再見！");
+            }
         }
 
         static void RunTypingTest()
