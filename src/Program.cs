@@ -50,19 +50,30 @@ namespace MonkeyTypeConsole
 
         static void Main(string[] args)
         {
-            bool keepPlaying = true;
-
-            while (keepPlaying)
+            try
             {
-                RunTypingTest();
+                while (true)
+                {
+                    RunTypingTest();
 
-                Console.WriteLine("\n-----------------------------------");
-                Console.Write("想再挑戰一次嗎？ (Y/N): ");
-                string response = Console.ReadLine()?.Trim().ToUpper();
-                keepPlaying = (response == "Y");
+                    Console.WriteLine("\n-----------------------------------");
+                    Console.Write("想再挑戰一次嗎？ (Y/N): ");
+
+                    while (true)
+                    {
+                        var key = Console.ReadKey(true);
+                        if (key.Key == ConsoleKey.Y)
+                            break;
+                        if (key.Key == ConsoleKey.N)
+                            return;
+                    }
+                }
             }
-
-            Console.WriteLine("感謝遊玩！再見！");
+            finally
+            {
+                Console.WriteLine();
+                Console.WriteLine("感謝遊玩！再見！");
+            }
         }
 
         static void RunTypingTest()
