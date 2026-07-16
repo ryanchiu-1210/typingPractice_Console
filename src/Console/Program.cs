@@ -39,7 +39,8 @@ namespace MonkeyTypeConsole
             string TargetText = GenerateRandomText(10);
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Gray;
-            Console.WriteLine("題目如下：");
+            /* 我要狡辯，這裡用Write的話，跟下面同為五個全形字體的「你的輸入：」會齊平，能更好的確認輸入是否正確 */
+            Console.Write("題目如下：");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(TargetText);
             Console.ResetColor();
