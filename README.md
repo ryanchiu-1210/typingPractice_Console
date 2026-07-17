@@ -40,7 +40,7 @@ A lightweight command-line typing speed test built with C# (.NET), inspired by t
 ### 1. 快速遊玩（免安裝開發環境）
 如果你只想直接玩遊戲，請依照以下步驟：
 1. 前往本專案右側的 **[Releases](https://github.com/ryanchiu-1210/typingPractice_Console/releases/tag/v1.0.1)** 頁面。
-2. 下載最新版本的 typingGame-v1.0.1.zip` 壓縮檔。
+2. 下載最新版本的 `typingGame-v1.0.1.zip` 壓縮檔。
 3. 在電腦中將其**解壓縮**。
 4. 雙擊執行資料夾中的 `typingPractice_Console.exe` 即可開始挑戰！
 
