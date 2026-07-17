@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Language-C%23-blue.svg" alt="Language C#">
   <img src="https://img.shields.io/badge/.NET-9.0-purple.svg" alt=".NET 9.0">
   <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License MIT">
-  <img src="https://img.shields.io/badge/Release-v1.0.0-orange.svg" alt="Release v1.0.1">
+  <img src="https://img.shields.io/badge/Release-v1.0.1-orange.svg" alt="Release v1.0.1">
 </p>
 
 ---
